@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="575.0" prefWidth="762.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <TableView fx:id="amortizacion" layoutX="92.0" layoutY="72.0" prefHeight="431.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="mesCOL" prefWidth="75.0" text="Mes" />
+          <TableColumn fx:id="coutaCOL" prefWidth="75.0" text="Couta" />
+            <TableColumn fx:id="amorCOL" prefWidth="75.0" text="Amortizacion" />
+            <TableColumn fx:id="interesCOL" prefWidth="75.0" text="Interes" />
+            <TableColumn fx:id="balanceCOL" prefWidth="75.0" text="Balance" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="aceptar" layoutX="92.0" layoutY="520.0" onAction="#aceptarCredito" prefHeight="31.0" prefWidth="197.0" style="-fx-background-color: #34C21C;" text="Aceptar" textAlignment="CENTER" textFill="WHITE" />
+      <JFXButton fx:id="rechazar" layoutX="473.0" layoutY="520.0" onAction="#rechazarCredito" prefHeight="31.0" prefWidth="197.0" style="-fx-background-color: F12B00;" text="Rechazar" textAlignment="CENTER" textFill="WHITE" />
+      <Text layoutX="179.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabla de Amortizacion" wrappingWidth="404.00000286102295">
+         <font>
+            <Font name="Cambria Bold" size="38.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
